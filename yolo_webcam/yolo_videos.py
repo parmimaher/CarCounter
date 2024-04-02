@@ -45,7 +45,7 @@ while True:
             conf = math.ceil((box.conf[0]*100))/100
 
             # Class name
-            cls = int(box.cls[0]) # cum se leaga box de classNames si de ce [0]
+            cls = int(box.cls[0]) 
             currentClass = classNames[cls]
             if currentClass == "car" or currentClass == "truck" or currentClass == "bus" or currentClass == "motorbike" and conf > 0.3:
                 # cvzone.putTextRect(img, f'{currentClass} {conf}', (max(0, x1), max(35, y1)), scale = 0.6, thickness = 1, offset = 3)
